@@ -28,20 +28,21 @@ $project = $work->get_project($_GET["id"]);
 <head>
 	<title>Modifier le projet</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta charset="UTF-8">
 </head>
 <body>
-<form id="form_id" method="post">
+<form id="form_id" method="post" action="modifproject.php">
 <div class ="container">
   <div class="form-group">
-    <label for="exampleFormControlInput1">Modifier le titre</label> <input type="text" name="titre" class="form-control" value="<?php echo($project["title"]);?>">
+  	<br>
+    <label for="exampleFormControlInput1">Modifier le titre</label> <input type="text" name="titre" class="form-control" value="<?php echo($project["title"]);?>"><br>
     <label for="exampleFormControlInput1">Modifier la description</label>
   
     <textarea form="form_id" class="form-control" name="textoreo" value="<?php echo($project["description"]);?>" ><?php echo($project["description"]);?></textarea>
   </div>
 </form>
-
- <button class="btn btn-light" type="submit" name="Valider" value="OK">Valider les modifications</button>
- <button class="btn btn-danger" type="submit" name="Supprimer" value="DEL">Supprimer le projet</button>
-
+ <button class="btn btn-warning" type="submit" name="Valider" value="OK">Valider les modifications</button>
+ <button class="btn btn-danger" type="submit" name="Supprimer" value="DEL">Supprimer le projet</button><br><br>
+ <a href="addproject.php" class="btn btn-primary">Retour aux projets</a>
 </body>
 </html>

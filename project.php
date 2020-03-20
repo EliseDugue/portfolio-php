@@ -17,7 +17,7 @@ $project = $work->get_project($_GET["id"]);
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="favicon.ico">
-		<title>Treviso - Clean &amp; Elegant Onepage Multipurpose Bootstrap HTML</title>
+		<title>Projet</title>
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -45,12 +45,16 @@ $project = $work->get_project($_GET["id"]);
 							<a href="#page-top"></a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#about">About</a>
+							<a class="page-scroll" href="index.php">Accueil</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#portfolio">Portfolio</a>
+							<a class="page-scroll" href="login.php">Connexion</a>
 						</li>
 						<li>
+                        <li>
+                            <a class="page-scroll" href="logout.php">Se deconnecter</a>
+                        </li>
+                        <li>
 							
 						</li>
 						

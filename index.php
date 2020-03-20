@@ -14,7 +14,7 @@ $work = new Works;
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="favicon.ico">
-		<title>Treviso - Clean &amp; Elegant Onepage Multipurpose Bootstrap HTML</title>
+		<title>Notre portfolio</title>
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -67,8 +67,8 @@ $work = new Works;
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<div class="section-title">
-						<h2>Notre portfolio du futur</h2>
-						<p>Our portfolio is the best way to show our work, you can see here a big range of our work. Check them all and you will find what you are looking for.</p>
+						<h2>Notre portfolio</h2>
+						<p>Bienvenue sur notre portfolio. Vous trouverez ci-dessous tous nos projets.</p>
 					</div>
 				</div>
 			</div>
@@ -80,18 +80,20 @@ $work = new Works;
                   { ?>
 				<div class="col-md-6 col-0-gutter">
 					<div class="ot-portfolio-item">
-						<figure class="effect-bubba">
+						<a href="project.php?id=<?php echo($w["id"]); ?>">
+                            <figure class="effect-bubba">
 							<img src="images/demo/portfolio-1.jpg" alt="img02" class="img-responsive">
 							<figcaption>
-								<a href="project.php?id=<?php echo($w["id"]); ?>">
-                                <h2><?php echo($w["title"]); ?></h2></a>
+								<h2>
+                                <?php echo($w["title"]); ?></h2>
 							</figcaption>
 						</figure>
+                    </a>
 					</div>
 				</div>
-				<!-- end portfolio item --><?php } ?>
+            <?php } ?>
 			</div>
-			</div><!-- container -->
+			</div>
 		</section>
 
 		<section id="about" class="mz-module">
@@ -99,38 +101,19 @@ $work = new Works;
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="section-title">
-							<h2>ABOUT</h2>
+							<h2>A PROPOS</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 text-center">
+					<div class="text-center">
 						<div class="mz-about-container">
-							<p>A creative agency based on Candy Land, ready to boost your business with some beautifull templates. Lattes Agency is one of the best in town see more you will be amazed.</p>
+						<p><?php $description = $user->get_description();
+                         echo ($description["texte"]); ?></p>
 						</div>
 					</div>
 					<div class="col-md-6">						
 					</div>
-				</div>
-				<div class="row row-0-gutter">
-					<!-- about module -->
-					
-					<!-- end about module -->
-					<!-- about module -->
-					<div class="col-md-3 col-0-gutter mz-about-dark text-center">
-						
-					</div>
-					<!-- end about module -->
-					<!-- about module -->
-					<div class="col-md-3 col-0-gutter mz-about-default text-center">
-						
-					</div>
-					<!-- end about module -->
-					<!-- about module -->
-					<div class="col-md-3 col-0-gutter mz-about-dark text-center">
-						
-					</div>
-					<!-- end about module -->
 				</div>
 			</div>
 			<!-- /.container -->
@@ -144,7 +127,6 @@ $work = new Works;
 		</p>
 		<footer>
 			<div class="container text-center">
-				<p>Designed by <a href="http://moozthemes.com"><span>MOOZ</span>Themes.com</a></p>
 			</div>
 		</footer>
 

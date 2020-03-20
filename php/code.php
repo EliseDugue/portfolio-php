@@ -14,11 +14,11 @@ class Users {
     }
 
 
-        function get_description($id)
+        function get_description()
     {
         global $db;
 
-        $request = "SELECT description FROM Users WHERE id=$id";
+        $request = "SELECT texte FROM description WHERE id=1";
         $resultat = $db->query($request);
         $description = $resultat->fetch();
 
