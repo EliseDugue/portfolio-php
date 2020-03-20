@@ -1,1 +1,7 @@
-# portfolio-php-v2
+# Portfolio PHP
+
+BERDAH Julien
+DESSOULIERS Naomi
+DUGUE Elise
+
+MMI2A - 20/03/2020
